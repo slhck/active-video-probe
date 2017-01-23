@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player"></div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/active-probe.js"></script>
+    <script src="js/impl-youtube.js"></script>
+
+    <script>
+    document.probe = new ActiveProbe();
+    document.probe.sendPageLoaded()
+    // override the YouTube video here, for example:
+    // document.probe.setPlayerSettings({
+    //   videoUrl: 'fhWaJi1Hsfo'
+    // })
+
+    // this wrapper isn't necessary if we wait a little before
+    // starting the overall playback, but it ensures that the timing
+    // is "perfect"
+    function onYouTubeIframeAPIReady() {
+        document.probe.sendDocumentReady()
+      // document.probe.initializePlayer('youtube')
+    }
+
+    function finishMeasurement() {
+      document.probe.sendFinished()
+    }
+      
+    </script>
+
+    <br><br>
+    <input type="button" value="Finish" id="finish" onClick="finishMeasurement()"/>
+  </body>
+</html>

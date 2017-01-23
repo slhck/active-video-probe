@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  	<script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/active-probe.js"></script>
+    <script src="js/impl-html5.js"></script>
+
+    <script>
+    document.probe = new ActiveProbe()
+    document.probe.sendPageLoaded()
+
+    $(document).ready(function(){
+      document.probe.sendDocumentReady()
+      // document.probe.initializePlayer('html5')
+    })
+
+    function finishMeasurement() {
+      document.probe.sendFinished()
+    }
+      
+    </script>
+
+    <div class="container">
+      <div id="videoPlayer"></div>
+    </div>
+
+    <br><br>
+    <input type="button" value="Finish" id="finish" onClick="finishMeasurement()"/>
+  </body>
+</html>

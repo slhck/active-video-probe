@@ -1,0 +1,42 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.5.0)
+      public_suffix (~> 2.0, >= 2.0.2)
+    awesome_print (1.7.0)
+    colored (1.2)
+    cookiejar (0.3.3)
+    em-http-request (1.1.5)
+      addressable (>= 2.3.4)
+      cookiejar (!= 0.3.1)
+      em-socksify (>= 0.3)
+      eventmachine (>= 1.0.3)
+      http_parser.rb (>= 0.6.0)
+    em-socksify (0.3.1)
+      eventmachine (>= 1.0.0.beta.4)
+    em-websocket-client (0.1.2)
+      eventmachine
+      websocket
+    eventmachine (1.2.1)
+    http_parser.rb (0.6.0)
+    json (2.0.3)
+    public_suffix (2.0.5)
+    trollop (2.1.2)
+    websocket (1.2.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  awesome_print
+  colored
+  em-http-request
+  em-websocket-client
+  json
+  trollop
+
+RUBY VERSION
+   ruby 2.3.0p0
+
+BUNDLED WITH
+   1.13.2
