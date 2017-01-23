@@ -3,7 +3,7 @@
 # ActiveProbe
 #
 # Synopsis:  Connects to Google Chrome and runs probing scripts
-# Author:    Werner Robitza, Telekom Innovation Laboratories
+# Author:    Werner Robitza, <werner.robitza@gmail.com>
 # Version:   0.1
 #
 # See also: http://www.igvita.com/2012/04/09/driving-google-chrome-via-websocket-api/
