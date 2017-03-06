@@ -138,7 +138,7 @@ class ProbeConnection
           if msg['event'] == "documentReady"
             cmd = <<-EOS
               document.probe.setPlayerSettings({
-                'videoUrl': '#{@settings.video_url}'
+		#{@settings.video_url.is_a? String and @settings.video_url.length > 0 ? "'videoUrl': '#{@settings.video_url}'" : '' }
               })
               document.probe.initializePlayer('#{@settings.technology}')
             EOS
