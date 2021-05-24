@@ -1,26 +1,26 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.5.0)
-      public_suffix (~> 2.0, >= 2.0.2)
+    addressable (2.7.0)
+      public_suffix (>= 2.0.2, < 5.0)
     awesome_print (1.7.0)
     colored (1.2)
     cookiejar (0.3.3)
-    em-http-request (1.1.5)
+    em-http-request (1.1.6)
       addressable (>= 2.3.4)
       cookiejar (!= 0.3.1)
       em-socksify (>= 0.3)
       eventmachine (>= 1.0.3)
       http_parser.rb (>= 0.6.0)
-    em-socksify (0.3.1)
+    em-socksify (0.3.2)
       eventmachine (>= 1.0.0.beta.4)
     em-websocket-client (0.1.2)
       eventmachine
       websocket
-    eventmachine (1.2.1)
+    eventmachine (1.2.7)
     http_parser.rb (0.6.0)
     json (2.3.0)
-    public_suffix (2.0.5)
+    public_suffix (4.0.6)
     trollop (2.1.2)
     websocket (1.2.3)
 
