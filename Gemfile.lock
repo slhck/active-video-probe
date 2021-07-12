@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.5.0)
-      public_suffix (~> 2.0, >= 2.0.2)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
     awesome_print (1.7.0)
     colored (1.2)
     cookiejar (0.3.3)
@@ -20,7 +20,7 @@ GEM
     eventmachine (1.2.1)
     http_parser.rb (0.6.0)
     json (2.3.0)
-    public_suffix (2.0.5)
+    public_suffix (4.0.6)
     trollop (2.1.2)
     websocket (1.2.3)
 
